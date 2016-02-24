@@ -351,17 +351,20 @@ void LogEvent(CFNotificationCenterRef center,
                                         );
     }
     //主窗口上的switch button
-    switchButton = [[UISwitch alloc] initWithFrame:CGRectMake(120, 20, 20, 10)];
+    switchButton = [[UISwitch alloc] initWithFrame:CGRectMake(90, 20, 20, 10)];
     [switchButton setOn:YES];
     [switchButton addTarget:self action:@selector(switchAction) forControlEvents:UIControlEventValueChanged];
  
-    UILabel *switch_Label = [[UILabel alloc] initWithFrame:CGRectMake(20, 30, 100, 20)];
+    UILabel *switch_Label = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 80, 20)];
     switch_Label.text = [NSString stringWithFormat:@"清空内存"];
     switch_Label.textColor = [UIColor whiteColor];
     
     
     //点击悬浮窗弹出的主窗口
-    nwindow = [[UIWindow alloc] initWithFrame:CGRectMake(kScreenWidth/2-150, kScreenHeight/2-150, 300, 300)];
+//    nwindow = [[UIWindow alloc] initWithFrame:CGRectMake(kScreenWidth/2-150, kScreenHeight/2-150, 300, 300)];
+    
+    nwindow = [[UIWindow alloc]initWithFrame:CGRectMake(kScreenWidth/2-75, kScreenHeight/2-140, 150, 280)];
+    
     nwindow.backgroundColor = [UIColor grayColor];
     nwindow.windowLevel = UIWindowLevelStatusBar;
     [nwindow addSubview:switchButton];

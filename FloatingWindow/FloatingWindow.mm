@@ -358,17 +358,20 @@ static void _logos_method$_ungrouped$SpringBoard$applicationDidFinishLaunching$(
                                         );
     }
     
-    switchButton = [[UISwitch alloc] initWithFrame:CGRectMake(120, 20, 20, 10)];
+    switchButton = [[UISwitch alloc] initWithFrame:CGRectMake(90, 20, 20, 10)];
     [switchButton setOn:YES];
     [switchButton addTarget:self action:@selector(switchAction) forControlEvents:UIControlEventValueChanged];
  
-    UILabel *switch_Label = [[UILabel alloc] initWithFrame:CGRectMake(20, 30, 100, 20)];
+    UILabel *switch_Label = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 80, 20)];
     switch_Label.text = [NSString stringWithFormat:@"清空内存"];
     switch_Label.textColor = [UIColor whiteColor];
     
     
     
-    nwindow = [[UIWindow alloc] initWithFrame:CGRectMake(kScreenWidth/2-150, kScreenHeight/2-150, 300, 300)];
+
+    
+    nwindow = [[UIWindow alloc]initWithFrame:CGRectMake(kScreenWidth/2-75, kScreenHeight/2-140, 150, 280)];
+    
     nwindow.backgroundColor = [UIColor grayColor];
     nwindow.windowLevel = UIWindowLevelStatusBar;
     [nwindow addSubview:switchButton];
@@ -408,4 +411,4 @@ static void _logos_method$_ungrouped$SpringBoard$applicationDidFinishLaunching$(
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$SpringBoard = objc_getClass("SpringBoard"); { char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(click), (IMP)&_logos_method$_ungrouped$SpringBoard$click, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(switchAction), (IMP)&_logos_method$_ungrouped$SpringBoard$switchAction, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(showresult2), (IMP)&_logos_method$_ungrouped$SpringBoard$showresult2, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(changeColor), (IMP)&_logos_method$_ungrouped$SpringBoard$changeColor, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; memcpy(_typeEncoding + i, @encode(UIPanGestureRecognizer *), strlen(@encode(UIPanGestureRecognizer *))); i += strlen(@encode(UIPanGestureRecognizer *)); _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(locationChange:), (IMP)&_logos_method$_ungrouped$SpringBoard$locationChange$, _typeEncoding); }MSHookMessageEx(_logos_class$_ungrouped$SpringBoard, @selector(applicationDidFinishLaunching:), (IMP)&_logos_method$_ungrouped$SpringBoard$applicationDidFinishLaunching$, (IMP*)&_logos_orig$_ungrouped$SpringBoard$applicationDidFinishLaunching$);} }
-#line 402 "/Users/panda/Documents/github/FloatingWindow/FloatingWindow/FloatingWindow.xm"
+#line 405 "/Users/panda/Documents/github/FloatingWindow/FloatingWindow/FloatingWindow.xm"
