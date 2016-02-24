@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA3FCB371C7C458A00476DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3FCB361C7C458A00476DC9 /* Foundation.framework */; };
+		BA3FCB421C7C458A00476DC9 /* FloatingWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA3FCB411C7C458A00476DC9 /* FloatingWindow.mm */; };
+		BA3FCB4D1C7C45B300476DC9 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3FCB4C1C7C45B300476DC9 /* libsubstrate.dylib */; };
+		BA3FCB531C7C46BE00476DC9 /* SBApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB4E1C7C46BE00476DC9 /* SBApplication.h */; };
+		BA3FCB541C7C46BE00476DC9 /* SBApplicationController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB4F1C7C46BE00476DC9 /* SBApplicationController.h */; };
+		BA3FCB551C7C46BE00476DC9 /* SBAppSwitcherModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB501C7C46BE00476DC9 /* SBAppSwitcherModel.h */; };
+		BA3FCB561C7C46BE00476DC9 /* SBHUDController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB511C7C46BE00476DC9 /* SBHUDController.h */; };
+		BA3FCB571C7C46BE00476DC9 /* SBHUDView.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB521C7C46BE00476DC9 /* SBHUDView.h */; };
+		BA3FCB591C7C46D700476DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3FCB581C7C46D700476DC9 /* UIKit.framework */; };
+		BA3FCB5F1C7C7F7300476DC9 /* SBLockScreenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB5E1C7C7F7300476DC9 /* SBLockScreenManager.h */; };
+		BA3FCB611C7C7F8200476DC9 /* SBBacklightController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB601C7C7F8200476DC9 /* SBBacklightController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA3FCB331C7C458A00476DC9 /* FloatingWindow.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = FloatingWindow.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3FCB361C7C458A00476DC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA3FCB3B1C7C458A00476DC9 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		BA3FCB3C1C7C458A00476DC9 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		BA3FCB3E1C7C458A00476DC9 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		BA3FCB3F1C7C458A00476DC9 /* FloatingWindow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FloatingWindow-Prefix.pch"; sourceTree = "<group>"; };
+		BA3FCB401C7C458A00476DC9 /* FloatingWindow.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FloatingWindow.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		BA3FCB411C7C458A00476DC9 /* FloatingWindow.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FloatingWindow.mm; sourceTree = "<group>"; };
+		BA3FCB461C7C458A00476DC9 /* FloatingWindow.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FloatingWindow.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/FloatingWindow.plist; sourceTree = "<group>"; };
+		BA3FCB4C1C7C45B300476DC9 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		BA3FCB4E1C7C46BE00476DC9 /* SBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBApplication.h; sourceTree = "<group>"; };
+		BA3FCB4F1C7C46BE00476DC9 /* SBApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBApplicationController.h; sourceTree = "<group>"; };
+		BA3FCB501C7C46BE00476DC9 /* SBAppSwitcherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAppSwitcherModel.h; sourceTree = "<group>"; };
+		BA3FCB511C7C46BE00476DC9 /* SBHUDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBHUDController.h; sourceTree = "<group>"; };
+		BA3FCB521C7C46BE00476DC9 /* SBHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBHUDView.h; sourceTree = "<group>"; };
+		BA3FCB581C7C46D700476DC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA3FCB5A1C7C47B200476DC9 /* AssistiveTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistiveTouch.h; sourceTree = "<group>"; };
+		BA3FCB5B1C7C47B200476DC9 /* AssistiveTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistiveTouch.m; sourceTree = "<group>"; };
+		BA3FCB5E1C7C7F7300476DC9 /* SBLockScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLockScreenManager.h; path = SpringBoard.h/SBLockScreenManager.h; sourceTree = "<group>"; };
+		BA3FCB601C7C7F8200476DC9 /* SBBacklightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBacklightController.h; path = SpringBoard.h/SBBacklightController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA3FCB2F1C7C458A00476DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3FCB591C7C46D700476DC9 /* UIKit.framework in Frameworks */,
+				BA3FCB4D1C7C45B300476DC9 /* libsubstrate.dylib in Frameworks */,
+				BA3FCB371C7C458A00476DC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA3FCB281C7C458A00476DC9 = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB381C7C458A00476DC9 /* FloatingWindow */,
+				BA3FCB351C7C458A00476DC9 /* Frameworks */,
+				BA3FCB341C7C458A00476DC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA3FCB341C7C458A00476DC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB331C7C458A00476DC9 /* FloatingWindow.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA3FCB351C7C458A00476DC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB581C7C46D700476DC9 /* UIKit.framework */,
+				BA3FCB4C1C7C45B300476DC9 /* libsubstrate.dylib */,
+				BA3FCB361C7C458A00476DC9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA3FCB381C7C458A00476DC9 /* FloatingWindow */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB5A1C7C47B200476DC9 /* AssistiveTouch.h */,
+				BA3FCB5B1C7C47B200476DC9 /* AssistiveTouch.m */,
+				BA3FCB4E1C7C46BE00476DC9 /* SBApplication.h */,
+				BA3FCB4F1C7C46BE00476DC9 /* SBApplicationController.h */,
+				BA3FCB501C7C46BE00476DC9 /* SBAppSwitcherModel.h */,
+				BA3FCB511C7C46BE00476DC9 /* SBHUDController.h */,
+				BA3FCB521C7C46BE00476DC9 /* SBHUDView.h */,
+				BA3FCB5E1C7C7F7300476DC9 /* SBLockScreenManager.h */,
+				BA3FCB601C7C7F8200476DC9 /* SBBacklightController.h */,
+				BA3FCB401C7C458A00476DC9 /* FloatingWindow.xm */,
+				BA3FCB411C7C458A00476DC9 /* FloatingWindow.mm */,
+				BA3FCB391C7C458A00476DC9 /* Package */,
+				BA3FCB3D1C7C458A00476DC9 /* Supporting Files */,
+			);
+			path = FloatingWindow;
+			sourceTree = "<group>";
+		};
+		BA3FCB391C7C458A00476DC9 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB3A1C7C458A00476DC9 /* DEBIAN */,
+				BA3FCB431C7C458A00476DC9 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		BA3FCB3A1C7C458A00476DC9 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB3B1C7C458A00476DC9 /* control.txt */,
+				BA3FCB3C1C7C458A00476DC9 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		BA3FCB3D1C7C458A00476DC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB3E1C7C458A00476DC9 /* PackageVersion.plist */,
+				BA3FCB3F1C7C458A00476DC9 /* FloatingWindow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA3FCB431C7C458A00476DC9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB441C7C458A00476DC9 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		BA3FCB441C7C458A00476DC9 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB451C7C458A00476DC9 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		BA3FCB451C7C458A00476DC9 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				BA3FCB461C7C458A00476DC9 /* FloatingWindow.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BA3FCB301C7C458A00476DC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3FCB551C7C46BE00476DC9 /* SBAppSwitcherModel.h in Headers */,
+				BA3FCB571C7C46BE00476DC9 /* SBHUDView.h in Headers */,
+				BA3FCB5F1C7C7F7300476DC9 /* SBLockScreenManager.h in Headers */,
+				BA3FCB561C7C46BE00476DC9 /* SBHUDController.h in Headers */,
+				BA3FCB541C7C46BE00476DC9 /* SBApplicationController.h in Headers */,
+				BA3FCB611C7C7F8200476DC9 /* SBBacklightController.h in Headers */,
+				BA3FCB531C7C46BE00476DC9 /* SBApplication.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BA3FCB321C7C458A00476DC9 /* FloatingWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3FCB491C7C458A00476DC9 /* Build configuration list for PBXNativeTarget "FloatingWindow" */;
+			buildPhases = (
+				BA3FCB2D1C7C458A00476DC9 /* ShellScript */,
+				BA3FCB2E1C7C458A00476DC9 /* Sources */,
+				BA3FCB2F1C7C458A00476DC9 /* Frameworks */,
+				BA3FCB301C7C458A00476DC9 /* Headers */,
+				BA3FCB311C7C458A00476DC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloatingWindow;
+			productName = FloatingWindow;
+			productReference = BA3FCB331C7C458A00476DC9 /* FloatingWindow.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA3FCB291C7C458A00476DC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					BA3FCB321C7C458A00476DC9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = BA3FCB2C1C7C458A00476DC9 /* Build configuration list for PBXProject "FloatingWindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BA3FCB281C7C458A00476DC9;
+			productRefGroup = BA3FCB341C7C458A00476DC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA3FCB321C7C458A00476DC9 /* FloatingWindow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA3FCB2D1C7C458A00476DC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		BA3FCB311C7C458A00476DC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA3FCB2E1C7C458A00476DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3FCB421C7C458A00476DC9 /* FloatingWindow.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA3FCB471C7C458A00476DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		BA3FCB481C7C458A00476DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		BA3FCB4A1C7C458A00476DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FloatingWindow/FloatingWindow-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		BA3FCB4B1C7C458A00476DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FloatingWindow/FloatingWindow-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA3FCB2C1C7C458A00476DC9 /* Build configuration list for PBXProject "FloatingWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3FCB471C7C458A00476DC9 /* Debug */,
+				BA3FCB481C7C458A00476DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA3FCB491C7C458A00476DC9 /* Build configuration list for PBXNativeTarget "FloatingWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3FCB4A1C7C458A00476DC9 /* Debug */,
+				BA3FCB4B1C7C458A00476DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA3FCB291C7C458A00476DC9 /* Project object */;
+}

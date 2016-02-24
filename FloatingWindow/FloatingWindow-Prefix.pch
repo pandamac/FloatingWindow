@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FloatingWindow' target in the 'FloatingWindow' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
