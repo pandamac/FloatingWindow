@@ -16,8 +16,8 @@
 #import "SBHUDController.h"
 #import "SBHUDView.h"
 
-#import "SBLockScreenManager.h"
-#import "SBBacklightController.h"
+
+
 
 
 #import <UIKit/UIPanGestureRecognizer.h>
@@ -34,6 +34,16 @@
 
 
 #import <objc/runtime.h>
+
+
+
+@interface SBLockScreenManager : NSObject
+- (void)unlockUIFromSource:(int)arg1 withOptions:(id)arg2;
+@end
+
+@interface SBBacklightController : NSObject
+- (void)turnOnScreenFullyWithBacklightSource:(int)arg1;
+@end
 
 @interface SBIconController {}
 +(id)sharedInstance;
@@ -185,7 +195,7 @@ void LogEvent(CFNotificationCenterRef center,
 @class SpringBoard; 
 static void _logos_method$_ungrouped$SpringBoard$click(SpringBoard*, SEL); static void _logos_method$_ungrouped$SpringBoard$switchAction(SpringBoard*, SEL); static void _logos_method$_ungrouped$SpringBoard$showresult2(SpringBoard*, SEL); static void _logos_method$_ungrouped$SpringBoard$changeColor(SpringBoard*, SEL); static void _logos_method$_ungrouped$SpringBoard$locationChange$(SpringBoard*, SEL, UIPanGestureRecognizer *); static void (*_logos_orig$_ungrouped$SpringBoard$applicationDidFinishLaunching$)(SpringBoard*, SEL, id); static void _logos_method$_ungrouped$SpringBoard$applicationDidFinishLaunching$(SpringBoard*, SEL, id); 
 
-#line 182 "/Users/panda/Documents/github/FloatingWindow/FloatingWindow/FloatingWindow.xm"
+#line 192 "/Users/panda/Documents/github/FloatingWindow/FloatingWindow/FloatingWindow.xm"
 
 
 
@@ -398,4 +408,4 @@ static void _logos_method$_ungrouped$SpringBoard$applicationDidFinishLaunching$(
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$SpringBoard = objc_getClass("SpringBoard"); { char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(click), (IMP)&_logos_method$_ungrouped$SpringBoard$click, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(switchAction), (IMP)&_logos_method$_ungrouped$SpringBoard$switchAction, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(showresult2), (IMP)&_logos_method$_ungrouped$SpringBoard$showresult2, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(changeColor), (IMP)&_logos_method$_ungrouped$SpringBoard$changeColor, _typeEncoding); }{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; memcpy(_typeEncoding + i, @encode(UIPanGestureRecognizer *), strlen(@encode(UIPanGestureRecognizer *))); i += strlen(@encode(UIPanGestureRecognizer *)); _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$SpringBoard, @selector(locationChange:), (IMP)&_logos_method$_ungrouped$SpringBoard$locationChange$, _typeEncoding); }MSHookMessageEx(_logos_class$_ungrouped$SpringBoard, @selector(applicationDidFinishLaunching:), (IMP)&_logos_method$_ungrouped$SpringBoard$applicationDidFinishLaunching$, (IMP*)&_logos_orig$_ungrouped$SpringBoard$applicationDidFinishLaunching$);} }
-#line 392 "/Users/panda/Documents/github/FloatingWindow/FloatingWindow/FloatingWindow.xm"
+#line 402 "/Users/panda/Documents/github/FloatingWindow/FloatingWindow/FloatingWindow.xm"

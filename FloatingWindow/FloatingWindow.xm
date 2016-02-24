@@ -15,8 +15,8 @@
 #import "SBHUDController.h"
 #import "SBHUDView.h"
 
-#import "SBLockScreenManager.h"
-#import "SBBacklightController.h"
+//#import "SBLockScreenManager.h"
+//#import "SBBacklightController.h"
 
 
 #import <UIKit/UIPanGestureRecognizer.h>
@@ -33,6 +33,16 @@
 
 
 #import <objc/runtime.h>
+
+
+
+@interface SBLockScreenManager : NSObject
+- (void)unlockUIFromSource:(int)arg1 withOptions:(id)arg2;
+@end
+
+@interface SBBacklightController : NSObject
+- (void)turnOnScreenFullyWithBacklightSource:(int)arg1;
+@end
 
 @interface SBIconController {}
 +(id)sharedInstance;

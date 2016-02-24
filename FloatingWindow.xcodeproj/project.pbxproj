@@ -16,8 +16,6 @@
 		BA3FCB561C7C46BE00476DC9 /* SBHUDController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB511C7C46BE00476DC9 /* SBHUDController.h */; };
 		BA3FCB571C7C46BE00476DC9 /* SBHUDView.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB521C7C46BE00476DC9 /* SBHUDView.h */; };
 		BA3FCB591C7C46D700476DC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3FCB581C7C46D700476DC9 /* UIKit.framework */; };
-		BA3FCB5F1C7C7F7300476DC9 /* SBLockScreenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB5E1C7C7F7300476DC9 /* SBLockScreenManager.h */; };
-		BA3FCB611C7C7F8200476DC9 /* SBBacklightController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3FCB601C7C7F8200476DC9 /* SBBacklightController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +37,6 @@
 		BA3FCB581C7C46D700476DC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA3FCB5A1C7C47B200476DC9 /* AssistiveTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistiveTouch.h; sourceTree = "<group>"; };
 		BA3FCB5B1C7C47B200476DC9 /* AssistiveTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistiveTouch.m; sourceTree = "<group>"; };
-		BA3FCB5E1C7C7F7300476DC9 /* SBLockScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLockScreenManager.h; path = SpringBoard.h/SBLockScreenManager.h; sourceTree = "<group>"; };
-		BA3FCB601C7C7F8200476DC9 /* SBBacklightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBBacklightController.h; path = SpringBoard.h/SBBacklightController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +90,6 @@
 				BA3FCB501C7C46BE00476DC9 /* SBAppSwitcherModel.h */,
 				BA3FCB511C7C46BE00476DC9 /* SBHUDController.h */,
 				BA3FCB521C7C46BE00476DC9 /* SBHUDView.h */,
-				BA3FCB5E1C7C7F7300476DC9 /* SBLockScreenManager.h */,
-				BA3FCB601C7C7F8200476DC9 /* SBBacklightController.h */,
 				BA3FCB401C7C458A00476DC9 /* FloatingWindow.xm */,
 				BA3FCB411C7C458A00476DC9 /* FloatingWindow.mm */,
 				BA3FCB391C7C458A00476DC9 /* Package */,
@@ -164,10 +158,8 @@
 			files = (
 				BA3FCB551C7C46BE00476DC9 /* SBAppSwitcherModel.h in Headers */,
 				BA3FCB571C7C46BE00476DC9 /* SBHUDView.h in Headers */,
-				BA3FCB5F1C7C7F7300476DC9 /* SBLockScreenManager.h in Headers */,
 				BA3FCB561C7C46BE00476DC9 /* SBHUDController.h in Headers */,
 				BA3FCB541C7C46BE00476DC9 /* SBApplicationController.h in Headers */,
-				BA3FCB611C7C7F8200476DC9 /* SBBacklightController.h in Headers */,
 				BA3FCB531C7C46BE00476DC9 /* SBApplication.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

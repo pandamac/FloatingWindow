@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>271C4E8C-FA46-4213-A9B2-CA860A2BE3B5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FloatingWindow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F0194F356E11E81A1A2ED33E6CEB11BE982667AD</key>
+		<string>github.com:zcc1414/FloatingWindow.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FloatingWindow.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F0194F356E11E81A1A2ED33E6CEB11BE982667AD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:zcc1414/FloatingWindow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F0194F356E11E81A1A2ED33E6CEB11BE982667AD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0194F356E11E81A1A2ED33E6CEB11BE982667AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FloatingWindow</string>
+		</dict>
+	</array>
+</dict>
+</plist>
